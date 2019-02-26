@@ -1,0 +1,78 @@
+img {
+  max-height: 400px;
+  max-width: 400px;
+  text-align: center;
+}
+body {
+    min-height: 100vh;
+    background: linear-gradient(black,MidnightBlue);
+    font-family : helvetica;
+  /*  background-color: grey;*/
+}
+input {
+  margin-left: 40%;
+  padding-top: 20%;
+  font-size: 120%;
+  border : 1px solid black;
+  border-radius: 10px;
+  padding: 3px;
+  font-family: helvetica;
+}
+input:hover {
+background-color: gray;
+color: white;
+}
+#valid_button:hover {
+  color: white;
+  background-color: green;
+}
+.liste {
+  list-style: none;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: helvetica;
+  font-weight: bold;
+  color: green;
+}
+
+.message_reussi {
+  list-style: none;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: helvetica;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+.accueil {
+  list-style: none;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: helvetica;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+.accueil:hover {
+  list-style: none;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: helvetica;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+}
+
+/*.Connection {
+  height: 50px;
+  width: 150px;
+  background-color: gray;
+  position: absolute;
+  left: 45%;
+  top: 40%;
+  font-size: 22px;
+  text-align: center;
+  border: 4px solid black;
+  border-radius: 15%;
+}*/

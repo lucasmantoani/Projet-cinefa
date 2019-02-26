@@ -1,0 +1,53 @@
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: black;
+  opacity: 0.5;
+}
+header h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    opacity: 0.5;
+}
+ol {
+    background-color: black;
+    display: block;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+li a  {
+    position: relative;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+li a:hover {
+    text-decoration: none;
+    color: #ffffff;
+  /*  background-color: grey; /* couleur quand on passe la souris */
+    opacity: 0.8;
+}
+li ol {
+    display: none;
+}
+li:hover ol {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    margin-left: 0px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    z-index: 1;
+}
+.block {
+  display: block;
+}
