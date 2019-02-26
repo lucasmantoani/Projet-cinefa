@@ -26,31 +26,37 @@
 		<?php
 			require_once 'connexion.php';
 
-			if (isset($_POST['submit1'])) {
-			$pseudo = htmlspecialchars($_POST['pseudo']);
-			$mdp = htmlspecialchars($_POST['motdepasse']);
-			$address = htmlspecialchars($_POST['address']);
-			$mail = htmlspecialchars($_POST['mail']);
-			$phone = htmlspecialchars($_POST['phone']);
+			if (isset($_POST['submit1']))
+			{
+				$pseudo = htmlspecialchars($_POST['pseudo']);
+				$mdp = htmlspecialchars($_POST['motdepasse']);
+				$address = htmlspecialchars($_POST['address']);
+				$mail = htmlspecialchars($_POST['mail']);
+				$phone = htmlspecialchars($_POST['phone']);
 
-				if($db) {
-				$request_pseudo = "SELECT * FROM users WHERE pseudo = '" . $pseudo . "';";
-				$result_query = mysqli_query($db_handle, $request_pseudo);
-				$db_field = mysqli_fetch_assoc($result_query);
+					if($db)
+					{
+						$request_pseudo = "SELECT * FROM users WHERE pseudo = '" . $pseudo . "';";
+						$result_query = mysqli_query($db_handle, $request_pseudo);
+						$db_field = mysqli_fetch_assoc($result_query);
 
-					if ($db_field) {
-					echo 'Ce pseudo existe déjà bruh !'; }
-					else {
-					$rqt =
-					'INSERT INTO users ( pseudo, motdepasse, address, mail, phone) VALUES ("' . $pseudo . '","' . $mdp . '","' . $address . '","' . $mail . '","' . $phone . '");';
-					$result_query = mysqli_query($db_handle, $rqt);
+							if ($db_field)
+							{
+							echo 'Ce pseudo existe déjà bruh !';
+						  }
+							else
+							{
+								$rqt =
+								'INSERT INTO users ( pseudo, motdepasse, address, mail, phone) VALUES ("' . $pseudo . '","' . $mdp . '","' . $address . '","' . $mail . '","' . $phone . '");';
+								$result_query = mysqli_query($db_handle, $rqt);
 
-						if ($result_query){
-						echo '<script>alert("Vous êtes désormais inscrit au club, félicitation !")</script>';
-						}
+								if ($result_query)
+								{
+								echo '<script>alert("Vous êtes désormais inscrit au club, félicitation !")</script>';
+								}
+							}
 					}
-				}
-			}
+			 }
 		?>
 		</section>
 		</body>

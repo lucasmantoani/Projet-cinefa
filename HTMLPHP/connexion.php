@@ -1,7 +1,7 @@
 <?php
   // Page servant à la connexion à ma base de données, que j'include partout ou j'en ai besoin.
-  
-  define('DB_SERVER','localhost');
+
+  define('DB_SERVER','localhost'); // Dans le cas ou la base de données à été importée en local.
   define('DB_USER','root');
   define('DB_PASS','');
 

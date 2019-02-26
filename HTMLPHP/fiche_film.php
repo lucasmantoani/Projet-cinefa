@@ -8,15 +8,13 @@
   </head>
   <body>
     <?php
-
       // Fiche individuelle d'un film, présentant les acteurs et le réalisateur s'ils sont présents.
 
-      ////////////////////////////////////////////////////////////////////////////////////////////////
       require_once 'connexion.php';                                 // Inclure le fichier de connexion
-      ////////////////////////////////////////////////////////////////////////////////////////////////
       include 'header.php';
 
-      if (isset($_GET['id'])) {
+      if (isset($_GET['id']))
+      {
 
         $request = "SELECT *,movies.links as linkmovies FROM movies INNER JOIN directors ON directors.id_director = movies.id_director WHERE id_movies =" . $_GET['id']; //Requette SQL
         $result_query = mysqli_query($db_handle, $request);         //Resultat de la requette SQL pour les films
@@ -37,9 +35,7 @@
         $name = str_replace(" ", "_", $db_field['title']); // Sert à utiliser le nom de la personne pour faire une classe CSS
 
           echo "<h1>" . $db_field['title'] . "</h1>" ; //Titre de la page avec le nom du réalisateur cliqué
-
           echo '<img class="' . $name . '" src="' . $db_field['linkmovies'] . '">' ; // <img src avec le liens dans ma base de données
-
           echo "<ul class = 'liste'><li>" . $db_field['title'] . "</li>" .
                "<li>" . "Date de sortie : " . $db_field['year_released'] . "</li>" .
                "<li>" . "Genre: " . $db_field['Genre'] . "</li>" .
@@ -47,7 +43,7 @@
                '<li>' . "Fiche du réalisateur :" . '<a href="fiche_realisateur.php?id=' . $db_field['id_director'] . '">' . $db_field['name'] . '</a> </li>' .
                '<li>' . "Fiche de l'acteur :" . '<a href="fiche_acteur.php?id=' . $db_field2['id_actor'] . '">' . $db_field2['name'] . '</a> </li> </ul>' ;
 
-        }
+      }
       else
       {
         echo "Film non présent dans la base de données";

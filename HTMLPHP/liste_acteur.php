@@ -7,19 +7,19 @@
   </head>
   <body> <!-- Liste de tout les acteurs présents dans la base de données -->
     <?php
-      ////////////////////////////////////////////////////////////////////////////////////////////////
+
       require_once 'connexion.php';                                 // Inclure le fichier de connexion
-      ////////////////////////////////////////////////////////////////////////////////////////////////
-
       include 'header.php';
-    ?> <h1>Liste des acteurs</h1>
+    ?>
 
-          <form name="form1" method="POST" action="#" required>
-            <input type="text" name="recherche" placeholder="Recherche" required ><br>
-            <input id="valid_button" type="submit" name="submit1" placeholder="Inscription" required>
-          </form>
+    <h1>Liste des acteurs</h1>
 
-          <p class="message_reussi">Resultat de la recherche :</p>
+      <form name="form1" method="POST" action="#" required>
+        <input type="text" name="recherche" placeholder="Recherche" required ><br>
+        <input id="valid_button" type="submit" name="submit1" placeholder="Inscription" required>
+      </form>
+
+      <p class="message_reussi">Resultat de la recherche :</p>
 
         <?php
         ////////////////////////////////////////////////////////////////////////////////

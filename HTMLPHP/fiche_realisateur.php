@@ -15,7 +15,8 @@
       ////////////////////////////////////////////////////////////////////////////////////////////////
       include 'header.php';
 
-      if (isset($_GET['id'])) {
+      if (isset($_GET['id']))
+      {
 
         $request = "SELECT * FROM directors WHERE id_director = " . $_GET['id']; //Requette SQL
         $result_query = mysqli_query($db_handle, $request);         //Resultat de la requette SQL
@@ -36,15 +37,16 @@
                "<li>" . "Age : " . $db_field['age'] . " ans." . "</li>" .
                "<li>" . $db_field['gender'] . "</li>" .
                "<li>" . $db_field['name'] . "</li></ul>";
-               while ($db_field2 = mysqli_fetch_assoc($result_query2)){
+
+               while ($db_field2 = mysqli_fetch_assoc($result_query2))
+               {
                  echo '<ul class = "liste"><li class = "liste"> est le réalisateur de  :' . '<a href="fiche_film.php?id=' . $db_field2['id_movies'] . '">' . $db_field2['title'] . '</a> </li></ul>';
-             }
-        }
-      else {
+               }
+      }
+      else
+      {
         echo "Réalisateur non présent dans la base de données";
       }
     ?>
   </body>
 </html>
-
-<?php echo '<a href=""></a>' ?>
