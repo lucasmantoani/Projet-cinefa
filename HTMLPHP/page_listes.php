@@ -205,10 +205,13 @@
 
               }
           }
-          else {
+
+          else
+          {
             echo "<p class='accueil'>Pour accèder a cette page, vous devez faire partie du Club Cinefa. <br>
                   Vous pouvez créer un compte dans l'onglet 'Inscription' ou vous connecter dans l'onglet 'Connexion'.</p>";
           }
+
       ?>
     </body>
   </html>
