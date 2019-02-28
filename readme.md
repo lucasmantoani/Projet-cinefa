@@ -1,4 +1,4 @@
-#-------------------------------- CINEFA ---------------------------------------
+# CINEFA
 
 Le but du projet était de créer un site permetant à l'utilisateur de s'incrire et de se connecter,
 puis de créer des listes de films et y ajouter des films présents dans une base de données.
@@ -9,13 +9,13 @@ présents dans la base de données, d'accéder à leurs fiches individuelles et,
 Le projet à été déposé ici d'un seul coup, car lors de la phase de développement, 
 je n'utilisais pas Github mais mon propre serveur, pour avoir la base de données et les fichiers au même endroit.
 
-#-------------------------------- Techno utilisées -------------------------------
+# TECHNO UTILISÉE 
 
 Le but de ce projet était d'utiliser principalement PHP et SQL.
 J'ai aussi utilisé HTML et CSS pour l'affichage, et Javacript pour certaines
 intéractions avec l'utilisateur.
 
-#-------------------------------- Notice et informations -------------------------
+# NOTICE ET INFORMATIONS
 
   * Pour ouvrir Cinefa dans le navigateur, aller dans /cinefa/HTMLPHP et l'index
     se lancera automatiquement.
