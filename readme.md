@@ -14,6 +14,7 @@ je n'utilisais pas Github mais mon propre serveur, pour avoir la base de donnée
 Le but de ce projet était d'utiliser principalement PHP et SQL.
 J'ai aussi utilisé HTML et CSS pour l'affichage, et Javacript pour certaines
 intéractions avec l'utilisateur.
+NB : Le visuel n'était pas noté, c'est pourquoi il est si "simpliste"
 
 # NOTICE ET INFORMATIONS
 
@@ -25,8 +26,6 @@ intéractions avec l'utilisateur.
 
   * HTML et PHP dans un même dossier, CSS du site et du header dans /CSS.
 
-  * CINEFA LOCALHOST VERSION 1.0
-
   * Un remerciement au passage pour les gens de ma classe participant également au projet et les
     amis m'ayant donné un coup de main, car des fois on à besoin de deux cerveaux (ou plus) pour
     voir qu'il manque un point-virgule ligne 115.
@@ -34,4 +33,4 @@ intéractions avec l'utilisateur.
   * Merci aussi à notre prof de PHP Simon, pour sa patience de l'extrême face à nous et nos (nombreuses) questions.
 
 
-  *                                 *MANTOANI LUCAS - IFATECH METZ - 2019.
+                                    *MANTOANI LUCAS - IFATECH METZ - 2019.
