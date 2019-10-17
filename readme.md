@@ -9,14 +9,14 @@ présents dans la base de données, d'accéder à leurs fiches individuelles et,
 Le projet à été déposé ici d'un seul coup, car lors de la phase de développement, 
 je n'utilisais pas Github mais mon propre serveur, pour avoir la base de données et les fichiers au même endroit.
 
-# TECHNO UTILISÉE 
+## TECHNO UTILISÉE 
 
 Le but de ce projet était d'utiliser principalement PHP et SQL.
 J'ai aussi utilisé HTML et CSS pour l'affichage, et Javacript pour certaines
 intéractions avec l'utilisateur.
 NB : Le visuel n'était pas noté, c'est pourquoi il est si "simpliste"
 
-# NOTICE ET INFORMATIONS
+## NOTICE ET INFORMATIONS
 
   * Pour ouvrir Cinefa dans le navigateur, aller dans /cinefa/HTMLPHP et l'index
     se lancera automatiquement.
