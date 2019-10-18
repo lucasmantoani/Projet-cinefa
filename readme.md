@@ -33,4 +33,4 @@ NB : Le visuel n'était pas noté, c'est pourquoi il est si "simpliste"
   * Merci aussi à notre prof de PHP Simon, pour sa patience de l'extrême face à nous et nos (nombreuses) questions.
 
 
-                                    *MANTOANI LUCAS - IFATECH METZ - 2019.
+                                    *MANTOANI LUCAS - IFATECH METZ - Avril 2019.
